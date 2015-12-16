@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.homeController">
+   <children>
+      <TableView fx:id="allPosts" layoutX="295.0" layoutY="215.0" prefHeight="452.0" prefWidth="988.0" />
+      <TextArea fx:id="postText" layoutX="424.0" layoutY="98.0" prefHeight="59.0" prefWidth="731.0" promptText="Write your post here..." />
+      <Button fx:id="postButton" layoutX="1028.0" layoutY="169.0" mnemonicParsing="false" onAction="#sendPost" prefHeight="25.0" prefWidth="127.0" text="Post" />
+      <ImageView fx:id="dmpImage" fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="notice" layoutX="424.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notice : All residence are told to stay in their home after midnight due to recent terrorist activities.Thank you for your cooperation." wrappingWidth="731.0" />
+      <Text layoutX="1199.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed By Dept of CSE,BUET">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Button fx:id="developers" layoutX="862.0" layoutY="34.0" mnemonicParsing="false" onAction="#showDevelopers" prefHeight="25.0" prefWidth="146.0" text="Developers" />
+      <Button fx:id="contacts" layoutX="570.0" layoutY="34.0" mnemonicParsing="false" onAction="#showContacts" prefHeight="25.0" prefWidth="146.0" text="Contacts" />
+      <Button fx:id="noticeButton" layoutX="1008.0" layoutY="34.0" mnemonicParsing="false" onAction="#showAllUsers" prefHeight="25.0" prefWidth="146.0" text="All Users" />
+      <Button fx:id="allPostsButton" layoutX="716.0" layoutY="34.0" mnemonicParsing="false" onAction="#showAllPosts" prefHeight="25.0" prefWidth="146.0" text="All Posts" />
+      <Text layoutX="424.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER" wrappingWidth="146.0" />
+      <Line endX="90.0" layoutX="479.0" layoutY="59.0" startX="-55.0" />
+      <Line endX="90.0" layoutX="479.0" layoutY="34.0" startX="-55.0" />
+      <Text layoutX="61.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users Onlines" />
+      <Text layoutX="295.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recent Posts" />
+      <Button fx:id="updatenotice" layoutX="881.0" layoutY="169.0" mnemonicParsing="false" onAction="#updateNotice" prefHeight="25.0" prefWidth="127.0" text="Update Notice" />
+      <TableView fx:id="usersonline" layoutX="71.0" layoutY="226.0" prefHeight="452.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

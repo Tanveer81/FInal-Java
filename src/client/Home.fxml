@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.HomeController">
+   <children>
+      <TableView fx:id="allPosts" layoutX="219.0" layoutY="216.0" prefHeight="355.0" prefWidth="731.0">
+         <columns>
+            <TableColumn prefWidth="629.0" text="DMP Posts" />
+         </columns>
+      </TableView>
+      <TextArea fx:id="postText" layoutX="219.0" layoutY="115.0" prefHeight="59.0" prefWidth="731.0" promptText="Write your post here..." />
+      <Button fx:id="profile" layoutX="337.0" layoutY="41.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="25.0" prefWidth="114.0" text="Profile" />
+      <ImageView fx:id="dmpImage" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="notice" layoutX="219.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notice : All residence are told to stay in their home after midnight due to recent terrorist activities.Thank you for your cooperation." wrappingWidth="731.0" />
+      <Text layoutX="822.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed By Dept of CSE,BUET">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+      <Button fx:id="developers" layoutX="679.0" layoutY="41.0" mnemonicParsing="false" onAction="#showDevelopers" prefHeight="25.0" prefWidth="114.0" text="Developers" />
+      <Button fx:id="contacts" layoutX="451.0" layoutY="41.0" mnemonicParsing="false" onAction="#showContacts" prefHeight="25.0" prefWidth="114.0" text="Contacts" />
+      <Button fx:id="noticeButton" layoutX="793.0" layoutY="41.0" mnemonicParsing="false" onAction="#showNotice" prefHeight="25.0" prefWidth="114.0" text="Notices" />
+      <Button fx:id="allPostsButton" layoutX="565.0" layoutY="41.0" mnemonicParsing="false" onAction="#showMyPosts" prefHeight="25.0" prefWidth="114.0" text="My Posts" />
+      <Text layoutX="219.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER" wrappingWidth="114.0" />
+      <Line endX="60.0" layoutX="276.0" layoutY="66.0" startX="-55.0" />
+      <Line endX="60.0" layoutX="276.0" layoutY="41.0" startX="-55.0" />
+      <MenuButton fx:id="post" layoutX="894.0" layoutY="185.0" mnemonicParsing="false" text="Post">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Button fx:id="noticeButton1" layoutX="907.0" layoutY="41.0" mnemonicParsing="false" onAction="#showNotice" prefHeight="25.0" prefWidth="66.0" text="Sign Out" />
+      <Button fx:id="post2" layoutX="816.0" layoutY="185.0" mnemonicParsing="false" onAction="#sendpost" text="Post" />
+   </children>
+</AnchorPane>

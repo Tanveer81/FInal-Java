@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.developerController">
+    <children>
+        <ImageView fx:id="dmpImage" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+        <Text fx:id="notice" layoutX="219.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Notice : All residence are told to stay in their home after midnight due to recent terrorist activities.Thank you for your cooperation." wrappingWidth="731.0" />
+        <Text layoutX="822.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed By Dept of CSE,BUET">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Text>
+      <Button fx:id="noticeButton" layoutX="789.0" layoutY="40.0" mnemonicParsing="false" onAction="#showNotice" prefHeight="25.0" prefWidth="114.0" text="Notice" />
+      <Button fx:id="contacts" layoutX="447.0" layoutY="40.0" mnemonicParsing="false" onAction="#showContacts" prefHeight="25.0" prefWidth="114.0" text="Contacts" />
+      <Button fx:id="home" layoutX="219.0" layoutY="40.0" mnemonicParsing="false" onAction="#showHome" prefHeight="25.0" prefWidth="114.0" text="Home" />
+      <Button fx:id="users" layoutX="333.0" layoutY="40.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="25.0" prefWidth="114.0" text="Profile" />
+      <Button fx:id="allPosts" layoutX="561.0" layoutY="40.0" mnemonicParsing="false" onAction="#showMyPosts" prefHeight="25.0" prefWidth="114.0" text="My Posts" />
+      <Text layoutX="675.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developer" textAlignment="CENTER" wrappingWidth="114.0" />
+      <Line endX="55.0" layoutX="732.0" layoutY="65.0" startX="-55.0" />
+      <Line endX="55.0" layoutX="732.0" layoutY="40.0" startX="-55.0" />
+      <Text layoutX="300.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Developed By," wrappingWidth="451.13671875" />
+      <Text layoutX="323.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanveer Hannan,Dept of CSE,BUET" wrappingWidth="200.0" />
+      <Text layoutX="323.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mohaiminul Islam Emon,Dept of CSE,BUET" wrappingWidth="231.13671875" />
+      <Text layoutX="300.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supervised By," wrappingWidth="77.13671875" />
+      <Text layoutX="323.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Iftekharul Islam Sakib,Lecturer of CSE,BUET" wrappingWidth="248.13671875" />
+    </children>
+</AnchorPane>

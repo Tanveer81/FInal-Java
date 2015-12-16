@@ -1,0 +1,9 @@
+use anything as button
+
+controller.text.setOnMouseClicked(event -> {
+            try {
+                showHomePage("kutta");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
